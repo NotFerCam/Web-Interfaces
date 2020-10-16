@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Matriculación</title>
+</head>
+<body>    
+    <form name="ejercicio9" action="visor1.php" method="POST">                      
+        <a>Introduzca su nombre:</a><input type="text" name="nombre" value=''><br>
+        <a>Introduzca sus apellidos:</a><input type="text" name="apellidos" value=''><br>
+        <a>Introduzca su DNI:</a><input type="text" name="dni" value=""><br>
+        <a>Introduzca su genero:</a><br>
+        <input type='radio' name='genero' value='Hombre'>Hombre</br>
+        <input type='radio' checked name='genero' value='Mujer'>Mujer</br> 
+        <input type='radio' name='genero' value='Es un helicoptero de combate'>No binario</br>
+
+        <a>Introduzca su grado a estudiar:</a><br>
+        <select name="grado"> 
+            <Option selected>Desarrollo de Aplicaciones Web</option> 
+            <Option>Administracion de Sistemas Insformaticos en Red</option> 
+            <Option>Desarrollo de Aplicaciones Multiplataforma</option> 
+            <Option>Madera</option>            
+        </select><br>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar">
+    </form>
+</body>
+</html>

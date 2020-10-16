@@ -1,0 +1,50 @@
+header{
+    color: white;
+    font-size: 70px;
+    background-color: blueviolet;
+    font-family: "Vertilaser";
+}
+nav{
+    background-color: grey;         
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;    
+}
+li{
+    display: inline;    
+}
+a{
+    text-decoration: none;   
+    padding: 8px; 
+    color: aliceblue;  
+}
+li:hover{
+    background-color: blueviolet;
+}
+article{
+    width: 70%;
+    float: left;
+    background-color: #BB52CA;
+}
+p{
+    background-color: white;
+    border-radius: 10%;
+}
+section {
+    margin-left: 15px;
+    float: left;
+}
+aside {
+    width: 30%;
+    float: right;
+    background-color: #BB52CA;
+}
+footer{
+    clear: both;
+}
+*{
+    text-align: center;
+}
