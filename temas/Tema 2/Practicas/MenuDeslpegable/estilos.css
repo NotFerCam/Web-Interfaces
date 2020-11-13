@@ -1,0 +1,23 @@
+ul{
+    list-style: none;
+    background-color:  rgb(191, 200, 201);
+    width: 200px;
+           
+}
+li a{
+    padding: 5px; 
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+li a:hover{
+    background-color: white;
+    color: grey;
+}
+#hidden1{
+    visibility: hidden;
+}
+#hidden2{
+    visibility: hidden;
+}

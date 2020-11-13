@@ -1,0 +1,17 @@
+ul{
+    list-style: none;
+    background-color: grey; 
+    width: 200px;
+}
+li a{
+    padding: 5px;
+    border-top: 2px solid black;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+li a:hover{
+    background-color: white;
+    color: grey;
+}

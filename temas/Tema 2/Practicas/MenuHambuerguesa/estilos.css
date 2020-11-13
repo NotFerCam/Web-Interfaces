@@ -1,0 +1,26 @@
+.absoluto{
+    text-align: center;
+    width: 200px;
+    background-color: silver;
+    position: absolute;    
+    display: none;
+}
+.relativo{
+    width: 50px;
+    position: relative;    
+}
+
+button{    
+    border: none;
+    background-color: white;
+}
+
+.relativo:hover>.absoluto{
+    display: block;
+}
+.absoluto a{
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}

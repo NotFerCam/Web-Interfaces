@@ -1,0 +1,58 @@
+ul{
+    list-style: none;
+    width: 100%;
+    background-color: rgb(143, 87, 175);
+}
+li{
+    display: inline;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+li a.activo {
+    background-color: white;
+    color: rgb(143, 87, 175);
+}
+li a:hover{
+    background-color: white;
+    color: rgb(143, 87, 175);
+}
+form{
+    float: right;
+    margin-right: 100px;    
+}
+form button{
+    background-color: rgb(143, 87, 175);
+    border: none;
+    color: white; 
+    padding: 10px;
+}
+.material-icons{
+    display: inline;
+}
+.pagination {
+    margin-left: 600px;
+    margin-top: 35%;
+    display: inline-block;
+  }
+
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.activo {
+    background-color: rgb(143, 87, 175);
+    color: white;
+  }
+  
+  .pagination a:hover{background-color: #ddd;}
+  .boton-corazon{
+      float: left;
+      border-radius: 100%;
+  }

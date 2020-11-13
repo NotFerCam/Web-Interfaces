@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Display Visibility</title>
+    <style>
+        .caja{
+            width: 30%;
+            text-align: center;
+            float: left;
+            border: 0.25px black solid;
+            padding: 5px;
+            box-shadow: 10px 10px 10px rgb(44, 255, 1);
+            margin: 8px;
+        }
+        img{
+            width: 100%;
+            float: left;
+        }
+        button{
+            border: none;
+            padding: 10px;
+            background-color: #2EE618;
+            width: 100%;
+            color: white;
+        }
+        button:hover{
+            background-color: grey;
+        }
+    </style>
+</head>
+<script>
+    function reestablecer(){
+        document.getElementById("playa").style.display="block";
+        document.getElementById("bosque").style.visibility="visible";
+    }
+    function ocultar(){
+        document.getElementById("bosque").style.visibility="hidden";
+    }
+    function eliminar(){
+        document.getElementById("playa").style.display="none";
+    }
+</script>
+<body>
+    <div class="caja" id="playa">
+        <span>Caja 1</span>
+        <img src="img/img_5terre.jpg">
+        <button onclick="eliminar()">Eliminar</button>
+    </div>
+    <div class="caja" id="bosque">
+        <span>Caja 2</span>
+        <img src="img/img_forest.jpg">
+        <button onclick="ocultar()">Ocultar</button>
+    </div>
+    <div class="caja" id="aurora">
+        <span>Caja 3</span>
+        <img src="img/img_lights.jpg">
+        <button onclick="reestablecer()">Reestablecer Todo</button>
+    </div>
+</body>
+</html>

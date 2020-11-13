@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
+    <title>Menu Desplegable</title>
+</head>
+<script>
+    function ocultar(){
+        
+        document.getElementById("hidden").style.display="block";
+        document.getElementById("hidden1").style.visibility="visible";
+        document.getElementById("hidden2").style.visibility="visible";
+    }
+    function mostrar(){
+        document.getElementById("primero").style.display="block";
+        document.getElementById("hidden1").style.display="none";
+        document.getElementById("hidden2").style.display="none";
+        
+    }
+</script>
+<body>
+    <!--<span class="material-icons">menu</span>-->
+    <ul onmouseout="mostrar()">
+        <li id="primero" onmouseover="ocultar()"><a href="">Enlace 1</a></li>
+        <li id="hidden1"><a href="">Enlace 2</a></li>
+        <li id="hidden2"><a href="">Enlace 3</a></li>
+        </ul>
+    </ul>
+</body>
+</html>

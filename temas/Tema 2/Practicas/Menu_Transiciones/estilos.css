@@ -1,0 +1,27 @@
+.absoluto{
+    text-align: center;
+    width: 0;
+    background-color: silver;    
+    transition-duration: 2s;
+    height: 100%;
+}
+.relativo{
+    width: 50px;
+    position: relative;    
+}
+
+button{    
+    border: none;
+    background-color: white;
+}
+
+.relativo:hover>.absoluto{
+    width: 200px;
+    
+}
+.absoluto a{
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
