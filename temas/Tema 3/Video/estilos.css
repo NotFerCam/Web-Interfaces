@@ -1,0 +1,27 @@
+video{
+    width: 720px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+.contenedor{
+    margin: auto;
+    width: 50%;
+    height: 10%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+}
+html{
+    background-color: rgb(88, 121, 88);
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
