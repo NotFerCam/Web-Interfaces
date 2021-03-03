@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+    
+</head>
+<body>
+    <header role="heading">
+        <h1>Trabajo accesibilidad David</h1>
+    </header>
+    <nav role="navigation">
+        <ul>
+            <li><a href="#">Enlace 1</a></li>
+            <li><a href="#">Enlace 2</a></li>
+            <li><a href="#">Enlace 3</a></li>
+            <li><a href="#">Enlace 4</a></li>
+          </ul>
+    </nav>
+    <div class="contenido">
+        <article role="article">
+            <h2 tabindex="0">Video Accesible</h2>
+            <center class="botones">
+                <button onclick="playVideo();" class="btn btn-success" role="button">
+                    Reproducir
+                </button>
+                <button onclick="pauseVideo();" class="btn btn-warning" role="button">
+                    Pausar
+                </button>
+                <button onclick="stopVideo()" class="btn btn-danger" role="button">
+                    Parar
+                </button> 
+                <button onclick="rewindVideo();"  class="btn btn-info" role="button">
+                    Revovinar
+                </button>
+            </center>
+            <center>
+                <div class="contenedor" tabindex="0">
+                    <video controls poster="multimedia/imagen_video.jpg" id="myVideo" role="video">
+                        <source src="multimedia/video.mp4" type="video/mp4">
+                    </video>
+                </div>  
+            </center>              
+        </article>
+        <article role="article">
+            <h2 tabindex="0">Foto Accesible</h2>
+            <center class="contenedor">
+                <img src="multimedia/paisaje.jpg" tabindex="0" alt="En esta foto se observa una pequeña iglesia cerca de un gran lago" role="img">
+            </center>        
+        </article>
+        <article role="article">
+            <form class="formulario" role="form">
+                <h2 tabindex="0">Formulario de Logueo</h2>
+                <div class="nombre">
+                    <label tabindex="0">Nombre de Usuario:</label>
+                    <input type="text" aria-required="true">
+                </div>  
+                <div class="contraseña">
+                    <label tabindex="0">Contraseña</label>
+                    <input type="text" aria-required="true">
+                </div>                      
+                <button class="btn btn-success">Enviar</button>
+            </form>
+        </article>
+        <article role="article">
+            <h2 tabindex="0">¿QUE ES WAI-ARIA?</h2>
+            <p tabindex="0">Es una especificación que define un conjunto de atributos para mejorar la semántica y accesibilidad.
+            Viene dado por tres aspectos Roles, Propiedades y Estados:</p>
+            <ul>
+                <li tabindex="0"><b>Los Roles:</b> Definen lo que hace cada elemento.</li>
+                <li tabindex="0"><b>Las Propiedades:</b> definen las propiedades de los elementos, que se pueden utilizar para darles un significado adicional o semántica</li>
+                <li tabindex="0"><b>Los Estados:</b> Propiedades especiales que definen las condiciones actuales de los elementos, los estados difieren de las propiedades en que estas ultimas no cambian a lo largo del ciclo de la vida de la aplicación.</li>
+            </ul>            
+            <p tabindex="0">Los WAI-ARIA no afectan nada sobre la estructura de la pagina web.</p>
+            <h2 tabindex="0">CUANDO SE DEBERIA USAR WAI-ARIA</h2>
+            <p tabindex="0">Hay 4 áreas donde WAI-ARIA es útil:</p>
+            <ol>
+                <li tabindex="0"><b>Puntos de Referencia</b></li>
+                <li tabindex="0"><b>Actualizaciones de contenido dinamico</b></li>
+                <li tabindex="0"><b>Mejora de la accesibilidad</b></li>
+                <li tabindex="0"><b>Accesibilidad de controles no semánticos</b></li>
+            </ol>  
+            <h2 tabindex="0">Foco</h2>                                            
+            <p>El foco es la manera de navegar por la pagina web con el uso del teclado, el atributo tabindex nos ayuda a decidir si un elemento puede ser objeto del foco</p>            
+            <ul>
+                <li>tabindex="0"- este valor permite que los elementos que normalmente no se pueden tabular se conviertan en tabulables.</li>
+                <li>tabindex="-1" - esto permite que los elementos que normalmente no se pueden tabular reciban el foco de manera programática, por ejemplo, a través de JavaScript, o como destino de enlaces. </li>                    
+            </ul>                                            
+            <h2 tabindex="0">Puntuacion de la pagina</h2>
+            <center>
+                <img alt="En la imagen podemos apreciar la puntuacion de la pagina respecto al tema de acesibilidad" src="multimedia/imagen.png" role="img" tabindex="0">          
+            </center>            
+        </article>
+    </div>    
+</body>
+</html>
+<script>
+    theVideo = document.querySelector("#myVideo");
+
+    function playVideo() {
+       theVideo.play();
+    }
+    
+    function pauseVideo() {
+       theVideo.pause();
+    }
+
+    function stopVideo() {
+       theVideo.currentTime = 0;
+       theVideo.pause();
+    }
+    
+    function rewindVideo() {
+       theVideo.currentTime = 0;
+    }
+</script>
